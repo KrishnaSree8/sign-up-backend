@@ -17,4 +17,4 @@ mongoose.connect(process.env.DATABASE_ACCESS, () => console.log("database connec
 app.use(express.json())
 app.use(cors(corsOptions))
 app.use('/app', routes)
-app.listen(4000, () => console.log("server is running"))
+app.listen(process.env.PORT || 5000, () => console.log("server is running"))
