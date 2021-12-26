@@ -52,7 +52,7 @@ router.post('/signup', (request, response) =>{
 
 router.post('/signin', (request, response) =>{
   console.log(request)
-  db.mySchemas.find({email : request.email})
+  // db.mySchemas.find({email : request.email})
 })
 
 
